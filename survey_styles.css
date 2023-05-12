@@ -1,0 +1,45 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 50%;
+    box-sizing: border-box; 
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  .image_unselected {
+    border-width: 20px;
+    border-style:solid;
+    border-radius: 5px;
+    border-color: transparent; 
+  }
+
+  .image_selected{
+    border-width: 20px;
+    border-style:solid;
+    border-radius: 5px;
+    border-color: cadetblue;
+  }
+
+#clotheSelection{
+    padding: 100px;
+}
+
+.done_button{
+  background-color: black;
+    margin: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
