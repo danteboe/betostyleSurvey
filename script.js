@@ -1,4 +1,3 @@
-const images = document.getElementsByTagName("img");
 const clothing = [
   {
     name: 'Crop-top rosa',
@@ -257,6 +256,7 @@ const clothing = [
     link: 'chaqueta_rompevientos.png"'
   }
 ]
+const images = document.getElementsByClassName("image_unselected");
 
 for (let i = 0; i < images.length; i++) {
   images[i].addEventListener("click", function() {
@@ -314,8 +314,12 @@ function collect_tags(){
 }
 var answers = document.getElementById('results');
 
-answers.innerHTML += ('Las prendas/estilos que más te quedan son:'+bestStyles.toString());
+answers.innerHTML += ('Las prendas/estilos que más te quedan son: '+bestStyles.toString()+'.');
+
+var result_text = document.getElementById('results')
+result_text.classList.add('results')
 }
+
 const doneButton = document.getElementById('done_button');
 doneButton.addEventListener('click', collect_tags);
 

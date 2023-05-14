@@ -1,12 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  font-size: 110%;
+}
+
+div{
+  font-family: Poppins;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 4px;
+    padding: 0 200px;
   }
   
   .column {
-    flex: 50%;
+    flex: 25%;
     box-sizing: border-box; 
     padding: 0 4px;
   }
@@ -30,16 +48,205 @@
     border-color: cadetblue;
   }
 
-#clotheSelection{
-    padding: 100px;
-}
+
 
 .done_button{
   background-color: black;
     margin: 10px;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
     border-radius: 10px;
     font-family: sans-serif;
+    width: 200px; 
+  margin: 10px auto;
+    display: flex;
+    justify-content: center;
 }
+
+.done_button:hover{
+background-color: gray;
+}
+
+.done_button p{
+  text-align: center;
+}
+
+.questionRobot{
+  max-width: 200px;
+  max-height: 200px;
+  transform: rotate(-45deg);
+  
+}
+.roundRobot{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.suitRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(-30deg)
+}
+
+.pinkRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(30deg)
+}
+
+.fedoraRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(-30deg)
+}
+
+.ruanaRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(45deg)
+}
+
+.redRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(-30deg)
+}
+
+.earringRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(-30deg)
+}
+
+.plaidRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(-135deg)
+}
+.coolRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(135deg)
+}
+
+.hoodieRobot{
+  max-width: 300px;
+  max-height: 300px;
+  transform: rotate(45deg)
+}
+
+.results{
+  animation: fadeIn 5s;
+}
+
+#navbar{
+  background-color: white;
+  position:fixed;
+  width:105%;
+  height: 200px;
+  top:-5px;
+  z-index: 10;
+  left:-10px
+  
+}
+
+#navbar a{
+  float:right;
+  padding: 100px;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+
+}
+#clotheSelection{
+  padding: 200px 100px 0px 100px;
+  
+}
+
+#clotheSelection p{
+  text-align: center;
+  
+}
+
+#questionMarkRobot{
+  position:absolute;
+  right:-50px;
+  top:px;
+}
+
+#roundRobot{
+  position:absolute;
+  left:-50px;
+  top:1000px;
+  
+}
+
+#suitRobot{
+  position:absolute;
+  right:-100px;
+  top:500px;
+  
+}
+
+#pinkRobot{
+  position:absolute;
+  left:-100px;
+  top:1500px;
+  
+}
+
+#fedoraRobot{
+  position:absolute;
+  right:-100px;
+  top:1500px;
+  
+}
+#ruanaRobot{
+  position:absolute;
+  left:-100px;
+  top:500px;
+  
+
+}
+
+#redRobot{
+  position:absolute;
+  right:-100px;
+  top:1000px;
+  
+}
+
+#earringRobot{
+  position:absolute;
+  right:-100px;
+  top:2000px;
+  
+}
+
+#plaidRobot{
+  position:absolute;
+  right:-100px;
+  top:100px;
+  
+}
+
+#coolRobot{
+  position:absolute;
+  left:-100px;
+  top:100px;
+  
+}
+
+#hoodieRobot{
+  position:absolute;
+  left:-100px;
+  top:2000px;
+  
+}
+
+#results{
+  text-align: center;
+  padding: 10px;
+}
+

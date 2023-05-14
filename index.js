@@ -13,12 +13,11 @@ app.get('/', (req, res) => {
   const dom = new JSDOM(indexHtml);
   const document = dom.window.document;
   const elements = document.getElementsByClassName("column");
-  const images = document.getElementsByTagName("img");
+  const images = document.getElementsByClassName("image_unselected");
   const urls = [];
   
   const clothing = csvToArrayOfObjects('./clothes.csv');
   
-
 
 
   for (var i = 0; i<clothing.length; i++){
@@ -26,13 +25,16 @@ app.get('/', (req, res) => {
       
   }
 
-
+  var indexes = []
   function getImageTag(img) {
-      var randomIndex = Math.floor(Math.random() * urls.length);
-      var link = '/img_clothes/' + urls[randomIndex];
-      img.setAttribute('src', link.slice(0, -1));
-      img.setAttribute('id', [randomIndex])
-      
+    var randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * urls.length);
+    } while (indexes.includes(randomIndex));
+    var link = '/img_clothes/' + urls[randomIndex];
+    img.setAttribute('src', link.slice(0, -1));
+    img.setAttribute('id', [randomIndex]);
+    indexes.push(randomIndex);
   }
 
 
