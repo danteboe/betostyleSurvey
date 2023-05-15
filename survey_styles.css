@@ -42,10 +42,10 @@ div{
   }
 
   .image_selected{
-    border-width: 20px;
+    border-width: 5px;
     border-style:solid;
     border-radius: 5px;
-    border-color: cadetblue;
+    border-color: lightblue;
   }
 
 
